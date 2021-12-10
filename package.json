@@ -1,0 +1,45 @@
+{
+    "name": "test_auth_util_git",
+    "version": "1.0.0",
+    "description": "Testing the auth util with the validator",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prepare": "rm -rf ./dist && npm run build",
+        "build": "tsc -p .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "release": "npm publish --access public"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@sendgrid/mail": "7.4.7",
+        "base64-url": "2.3.3",
+        "bcrypt": "5.0.1",
+        "cookie": "0.4.1",
+        "handlebars": "4.7.7",
+        "html-pdf-lts": "2.2.7",
+        "jsonwebtoken": "8.5.1",
+        "libphonenumber-js": "^1.9.44",
+        "node-jose": "2.0.0",
+        "nodemailer": "6.6.5",
+        "querystring": "0.2.1",
+        "request": "2.88.2",
+        "twilio": "^3.71.3",
+        "url-join": "4.0.1",
+        "uuid": "8.3.2"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "5.0.0",
+        "@types/cookie": "0.4.1",
+        "@types/handlebars": "4.1.0",
+        "@types/node": "16.10.1",
+        "@types/nodemailer": "6.4.4",
+        "@types/request": "2.48.7",
+        "@types/uuid": "8.3.1"
+    },
+    "publishConfig": {
+        "@skillmine-dev:registry": ""
+    }
+}
