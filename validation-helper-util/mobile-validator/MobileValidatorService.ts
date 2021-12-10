@@ -37,7 +37,7 @@ export class MobileValidatorService {
                 let client = new twilio(mobile_config.client_id, mobile_config.client_secret);
                 client.lookups.v1
                     .phoneNumbers(mobile)
-                    .fetch()
+                    .fetch({type: [typeOptions]})
                     .then((number) => {
                         //console.log(number);
                         let phone = new PhoneEntity();
