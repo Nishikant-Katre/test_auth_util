@@ -19,7 +19,7 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/skillmine-dev/common-utils/nodejs/auth-utils.git
+git remote add origin https://github.com/Nishikant-Katre/test_auth_util
 git branch -M main
 git push -uf origin main
 ```
